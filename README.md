@@ -1,4 +1,4 @@
-Abstract
+# Abstract
 In this project we use several algorithms to tackle the problem of controlling an
 autonomous vehicle in the tasks of lane keeping and crash avoidance. The main
 simulation environment is ROS where we implemented a vehicle model equipped
@@ -12,4 +12,4 @@ algorithm that uses an architecture of a Convolutional Neural Network, relied on
 images fed from the camera as input. A comparative study of the results is done
 based on specific evaluation criteria.
 
-read the report (graduation-design-project.pdf) for detailed description of the work.
+Read the report (graduation-design-project.pdf) for detailed description of the work.
