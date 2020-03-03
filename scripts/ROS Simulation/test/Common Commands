@@ -1,0 +1,13 @@
+<!-- -->
+rostopic pub -r 100 /catvehicle/cmd_vel geometry_msgs/Twist  '{linear:{x: 0,y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0.001}}'
+rosrun catvehicle InformedAction_node
+roslaunch catvehicle catvehicle_skidpan.launch
+source ~/Home/virtualenv/bin/activate
+python ddpg.py
+
+<!-- Commented lines -->
+<!-- commented to make the collision possible in the simulation -->
+rospy.loginfo(rospy.get_caller_id() + " timed out waiting for new input, setting velocity to 0.")  ---> in cmdvel2gazebo.py
+<node name="obstacleStopper$(arg robot_name)" pkg="obstaclestopper" type="obstaclestopper_node" output="screen"> ---> catvehicle.launch
+<node name="distanceEstimator" pkg="catvehicle" type="distanceEstimator" output="screen"> ---> catvehicle.launch
+
